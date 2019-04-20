@@ -1,0 +1,19 @@
+.top-bg {
+	margin-top: 67px;
+	&__wrapper {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: auto;
+		padding-top: 330px;
+		padding-bottom: 109px;
+	}
+	&__h1 {
+		background-color: rgba(0, 0, 0, 0.3);
+		color: $light;
+		font-weight: bold;
+		font-size: 50px;
+		width: 65%;
+		padding: 8px 21px 8px 66px;
+	}
+}

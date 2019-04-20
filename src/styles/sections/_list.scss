@@ -1,0 +1,42 @@
+.list {
+	padding-top: 45px;
+	padding-bottom: 80px;
+	&__h2 {
+		margin-bottom: 40px;
+	}
+	ul {
+		column-count: 2;
+		li {
+			color: $green;
+			padding-right: 80px;
+			margin-bottom: 38px;
+		}
+		span {
+			color: $dark;
+		}
+	}
+}
+
+.list-bg {
+	&__wrapper {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding-top: 92px;
+		padding-bottom: 45px;
+	}
+	&__h2 {
+		margin-bottom: 45px;
+	}
+	ul {
+		li {
+			color: #9EE75E;
+			font-size: 20px;
+			padding-right: 80px;
+			margin-bottom: 12px;
+		}
+		span {
+			color: $light;
+		}
+	}
+}

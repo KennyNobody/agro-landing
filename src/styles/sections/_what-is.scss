@@ -1,0 +1,33 @@
+.what-is {
+	position: relative;
+	z-index: 2;
+	&__container {
+		background-color: $light;
+		padding: 10px;
+		display: flex;
+		height: 100%;
+	}
+	&__ill {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		flex-grow: 1;
+	}
+	&__content {
+		flex-shrink: 0;
+		width: 442px;
+		padding: 45px 27px 45px 20px;
+		ul {
+			color: $green;
+			li {
+				margin-bottom: 38px;
+			}
+			span {
+				color: $dark;
+			}
+		}
+	}
+	&__h2 {
+		margin-bottom: 35px;
+	}
+}

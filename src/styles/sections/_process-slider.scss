@@ -1,0 +1,32 @@
+.slider {
+	margin-top: -72px;
+	&__wrapper {
+		padding-top: 152px;
+		background-color: #F6F8F4;
+		padding-bottom: 47px;
+	}
+	&__h2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 25px;
+	}
+	&__nav {
+		display: flex;
+	}
+	&__link {
+		&--next {
+			margin-left: 8px;
+		}
+	}
+	&__thumb {
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: repeat;
+		margin-bottom: 12px;
+	}
+	&__text {
+		font-size: 14px;
+	}
+}

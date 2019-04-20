@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../../../../docs/img/sprites/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 3.2em 16em;
+    background-size: 5em 24.9em;
 }
 
 .no-svg .icon:before {
@@ -19,44 +19,62 @@
 
   .icon.arrow:before {
       background-position: 0em 0em;
-      width: 3.2em;
-      height: 3.2em;
+      width: 1.1em;
+      height: 1.8em;
   }
 
 
 
 
-  .icon.basket:before {
-      background-position: 0em -3.2em;
-      width: 3.2em;
-      height: 3.2em;
+  .icon.eng:before {
+      background-position: 0em -1.8em;
+      width: 2.7em;
+      height: 1.6em;
   }
 
 
 
 
-  .icon.battery:before {
-      background-position: 0em -6.4em;
-      width: 3.2em;
-      height: 3.2em;
+  .icon.icon-1:before {
+      background-position: 0em -3.4em;
+      width: 5em;
+      height: 4.9em;
   }
 
 
 
 
-  .icon.chart:before {
-      background-position: 0em -9.6em;
-      width: 3.2em;
-      height: 3.2em;
+  .icon.icon-2:before {
+      background-position: 0em -8.3em;
+      width: 4em;
+      height: 5em;
   }
 
 
 
 
-  .icon.login:before {
-      background-position: 0em -12.8em;
-      width: 3.2em;
-      height: 3.2em;
+  .icon.icon-3:before {
+      background-position: 0em -13.3em;
+      width: 5em;
+      height: 5em;
+  }
+
+
+
+
+  .icon.icon-4:before {
+      background-position: 0em -18.3em;
+      width: 5em;
+      height: 5em;
+  }
+
+
+
+
+  .icon.rus:before {
+      background-position: 0em -23.3em;
+      width: 2.7em;
+      height: 1.6em;
   }
 
 
