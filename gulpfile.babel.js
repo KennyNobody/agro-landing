@@ -38,6 +38,7 @@ const paths = {
 		scripts: [
 		"./src/js/swiper.min.js",
 		"./src/js/**/*.js",
+		"./src/js/zenscroll-min.js",
 		],
 		favicons: "./src/img/favicons/*.{jpg,jpeg,png,gif}",
 		images: [

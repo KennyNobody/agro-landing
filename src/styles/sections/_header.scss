@@ -1,5 +1,71 @@
 .header {
-	height: 67px;
 	background-color: $light;
-	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 3;
+	&--scrolled {
+		.logo__img-top {
+			max-height: 0px;
+		}
+		.logo {
+			height: auto;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+	}
+	&__container {
+		padding-left: 177px;
+		display: flex;
+		align-items: center;
+		height: 67px;
+		justify-content: space-between;
+	}
+	&__logo {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	&__link {
+		color: $dark;
+		text-decoration: none;
+		&--selected {
+			color: $green;
+		}
+		&:hover {
+			color: $green;
+		}
+	}
+	&__nav {
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		top: 8px;
+	}
+	&__lang {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: $dark;
+		margin-left: 13px;
+		position: relative;
+		top: 8px;
+		&:hover {
+			color: $green;
+		}
+		svg {
+			width: 27px;
+			height: auto;
+			height: 15px;
+			margin-right: 5px;
+			flex-shrink: 0;
+		}
+	}
 }

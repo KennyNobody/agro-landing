@@ -3,9 +3,35 @@
 	min-height: 220px;
 	color: $light;
 	&__container {
-		display: flex;
+		position: relative;
+		padding-left: 178px;
+		padding-top: 34px;
 	}
 	&__logo {
-		margin-top: -24px;
+		position: absolute;
+		left: 0px;
+		top: -24px;
+	}
+	&__nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 49px;
+	}
+	&__link {
+		text-decoration: none;
+		color: $light;
+		&:hover {
+			color: $green;
+		}
+	}
+	&__copyright {
+		a {
+			color: red;
+			text-decoration: none;
+			&:hover {
+				color: $light;
+			}
+		}
 	}
 }

@@ -1,0 +1,46 @@
+.content {
+	&--top {
+		padding-top: 75px;
+	}
+	&--bottom {
+		padding-bottom: 28px;
+	}
+	&__accent {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding-top: 48px;
+		padding-bottom: 37px;
+		margin-bottom: 46px;
+	}
+	&__block {
+		display: flex;
+	}
+	&__h2 {
+		margin-bottom: 46px;
+	}
+	&__column {
+		padding-bottom: 20px;
+		width: 50%;
+		line-height: 1.6;
+		padding-right: 22px;
+		position: relative;
+		ul {
+			li {
+				color: $green;
+				padding-right: 60px;
+				margin-bottom: 38px;
+			}
+			span {
+				color: $dark;
+			}
+		}
+		img {
+			margin-bottom: 24px;
+		}
+	}
+	&__text {
+		width: 100%;
+		margin-bottom: 46px;
+	}
+}
