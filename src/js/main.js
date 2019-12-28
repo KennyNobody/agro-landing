@@ -34,9 +34,11 @@
 
 	// Fix header
 	const headerAnchor = document.querySelector('.header');
+	const screenWidth = screen.width;
 
-	if (headerAnchor) {
-		window.onscroll = function(){
+	if (headerAnchor && (screenWidth > 1260)) {
+
+		window.addEventListener("scroll", function() {
 			let distanceTop = window.pageYOffset;
 
 			if (distanceTop <= 100) {
@@ -44,7 +46,8 @@
 			} else {
 				headerAnchor.classList.add('header--scrolled');
 			}
-		}
+		});
+
 	};
 
 	// Highlight links
@@ -69,5 +72,19 @@
 			link.classList.remove("header__link--selected");
 		}
 	});
-	});	
+	});
+
+	// Mobile menu
+
+	const bodyBlock = document.querySelector('.body');
+	const menuBlock = document.querySelector('.menu');
+	const menuBtn = document.querySelector('.header__menu');
+
+	menuBtn.addEventListener("click", function() {
+		bodyBlock.classList.add('body--menu');
+	});
+
+	menuBlock.addEventListener("click", function() {
+		bodyBlock.classList.remove('body--menu');
+	});
 })();

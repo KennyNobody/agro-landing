@@ -1,10 +1,16 @@
 .contacts {
 	padding-bottom: 56px;
+	@include r(900) {
+		padding-bottom: 0px;
+	}
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 4px;
+		@include r(900) {
+			flex-direction: column;
+		}
 	}
 	&__contact {
 		width: 38%;
@@ -12,10 +18,17 @@
 		margin-right: -95px;
 		position: relative;
 		z-index: 2;
+		@include r(900) {
+			width: 100%;
+			margin-right: 0px;
+		}
 	}
 	&__form {
 		width: 66%;
 		flex-shrink: 0;
+		@include r(900) {
+			width: 100%;
+		}
 	}
 }
 
@@ -24,6 +37,13 @@
 	background-color: $light;
 	height: 493px;
 	box-shadow: 1px 2px 40px rgba(0, 0, 0, 0.12);
+	@include r(900) {
+		height: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 	&__h2 {
 		margin-bottom: 35px;
 	}
@@ -47,12 +67,23 @@
 	background-color: #F6F8F4;
 	padding: 54px 39px 39px 147px;
 	height: 533px;
+	@include r(900) {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		height: auto;
+	}
 	&__h2 {
 		margin-bottom: 24px;
 	}
 	&__nav {
 		display: flex;
 		align-items: center;
+		@include r(900) {
+			flex-direction: column;
+			align-items: baseline;
+		}
 	}
 	&__result {
 		color: $green;
@@ -60,6 +91,11 @@
 		padding-right: 50px;
 		transition: 0.3s all;
 		opacity: 0;
+		@include r(900) {
+			padding-left: 0px;
+			padding-top: 0px;
+			width: 100%;
+		}
 	}
 	input[type="text"] {
 		display: block;
@@ -106,6 +142,9 @@
 		outline: none;
 		box-sizing: border-box;
 		font-family: 'Montserrat', sans-serif;
+		@include r(900) {
+			margin-bottom: 15px;
+		}
 		&:hover {
 			color: $light;
 			background-color: $green;

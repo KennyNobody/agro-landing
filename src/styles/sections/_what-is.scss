@@ -7,17 +7,36 @@
 		display: flex;
 		height: 100%;
 		box-shadow: 1px 2px 40px rgba(0, 0, 0, 0.12);
+		@include r(900) {
+			flex-direction: column;
+		}
 	}
 	&__ill {
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		flex-grow: 1;
+		@include r(900) {
+			background: none;
+		}
+		img {
+			display: none;
+			@include r(900) {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 	&__content {
 		flex-shrink: 0;
 		width: 442px;
 		padding: 45px 27px 45px 20px;
+		@include r(900) {
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 		ul {
 			color: $green;
 			li {

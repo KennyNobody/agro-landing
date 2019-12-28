@@ -1,11 +1,17 @@
 .list {
 	padding-top: 45px;
 	padding-bottom: 80px;
+	@include r(900) {
+		padding-bottom: 0px;
+	}
 	&__h2 {
 		margin-bottom: 40px;
 	}
 	ul {
 		column-count: 2;
+		@include r(900) {
+			column-count: 1;
+		}
 		li {
 			color: $green;
 			padding-right: 80px;
@@ -24,6 +30,9 @@
 		background-repeat: no-repeat;
 		padding-top: 92px;
 		padding-bottom: 45px;
+		@include r(900) {
+			padding-top: 45px;
+		}
 	}
 	&__h2 {
 		margin-bottom: 45px;
@@ -34,6 +43,9 @@
 			font-size: 20px;
 			padding-right: 80px;
 			margin-bottom: 12px;
+			@include r(900) {
+				font-size: 18px;
+			}
 		}
 		span {
 			color: $light;

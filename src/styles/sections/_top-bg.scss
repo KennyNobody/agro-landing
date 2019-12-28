@@ -1,5 +1,14 @@
 .top-bg {
 	margin-top: 67px;
+	@include r(1260) {
+		margin-top: 0px;
+	}
+	&__container {
+		@include r(1260) {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
 	&__wrapper {
 		background-size: cover;
 		background-position: center;
@@ -7,13 +16,27 @@
 		height: auto;
 		padding-top: 330px;
 		padding-bottom: 109px;
+		@include r(1260) {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
 	}
 	&__h1 {
 		background-color: rgba(0, 0, 0, 0.3);
 		color: $light;
 		font-weight: bold;
 		font-size: 50px;
-		width: 65%;
+		width: 75%;
 		padding: 8px 21px 8px 66px;
+		@include r(1260) {
+			width: 100%;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		@include r(660) {
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 36px;
+		}
 	}
 }

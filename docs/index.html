@@ -15,9 +15,9 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
-    <link rel="stylesheet" href="/styles/main.min.css" type="text/css">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css">
 </head>
-<body>
+<body class="body">
     <header class="header">
     	<div class="wrapper">
     		<div class="container header__container">
@@ -51,13 +51,18 @@
     				</svg>
     				<span>Ru</span>
     			</a>
+    			<div class="header__menu">
+    				<svg class="icon-svg">
+    					<use xlink:href="img/sprites/svg/symbols.svg#menu"></use>
+    				</svg>
+    			</div>
     		</div>
     	</div>
     </header>
     <main>
 		<section class="top-bg">
 			<div class="wrapper top-bg__wrapper" style="background-image: url(img/top-bg.jpg);">
-				<div class="container top-bg">
+				<div class="container top-bg__container">
 					<h1 class="top-bg__h1">
 						Renewable bio energy opportunity for Russian agriculture
 					</h1>
@@ -232,7 +237,7 @@
         <section class="what-is" id="block-3">
         	<div class="container what-is__container">
         		<div class="what-is__ill" style="background-image: url(img/what-is-image.jpg);">
-        			
+        			<img src="img/what-is-image.jpg" alt="Miscanthus">
         		</div>
         		<div class="what-is__content">
         			<h2 class="h2 what-is__h2">
@@ -449,6 +454,7 @@
         						<br>
         						Kalagra Limited is the UK holding company, used as the investment vehicle for investment outside the Russian Federation. Kalagra OOO is the overall Russian holding company and acts as the management company for three Russian subsidiaries: Kalagra Farm OOO, Timo Land OOO and Timo Invest OOO.
         					</p>
+        					<br>
         				</div>
         				<div class="content__column">
         					<img src="img/ill-1.jpg" alt="Иллюстрация 1">
@@ -614,22 +620,22 @@
     			<img src="img/logo-bottom.png" alt="Логотип">
     		</a>
     		<nav class="footer__nav">
-    			<a href="#" class="footer__link">
+    			<a href="#block-1" class="footer__link">
     				What we do
     			</a>
-    			<a href="#" class="footer__link">
+    			<a href="#block-2" class="footer__link">
     				Our objectives
     			</a>
-    			<a href="#" class="footer__link">
+    			<a href="#block-3" class="footer__link">
     				About miscanthus
     			</a>
-    			<a href="#" class="footer__link">
+    			<a href="#block-4" class="footer__link">
     				Kalagra group
     			</a>
-    			<a href="#" class="footer__link">
+    			<a href="#block-5" class="footer__link">
     				Where are we now?
     			</a>
-    			<a href="#" class="footer__link">
+    			<a href="#block-6" class="footer__link">
     				Contacts
     			</a>
     		</nav>
@@ -638,6 +644,29 @@
     		</p>
     	</div>
     </footer>
-    <script src="/js/main.min.js"></script>
+    <div class="menu">
+    	<div class="menu__content">
+    		<a href="#block-1" class="menu__link">
+    			What we do
+    		</a>
+    		<a href="#block-2" class="menu__link">
+    			Our objectives
+    		</a>
+    		<a href="#block-3" class="menu__link">
+    			About miscanthus
+    		</a>
+    		<a href="#block-4" class="menu__link">
+    			Kalagra group
+    		</a>
+    		<a href="#block-5" class="menu__link">
+    			Where are we now?
+    		</a>
+    		<a href="#block-6" class="menu__link">
+    			Contacts
+    		</a>
+    	</div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js"></script>
 </body>
 </html>
