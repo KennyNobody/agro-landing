@@ -57,6 +57,6 @@
 		"gulp-svg-sprites": "^4.1.2",
 		"gulp-uglify": "^3.0.2",
 		"smart-grid": "^2.1.2",
-		"swiper": "^4.5.0"
+		"swiper": "^6.5.1"
 	}
 }
